@@ -1,0 +1,12 @@
+
+.handles {
+    width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .handles {
+        display: flex;
+        justify-content: center;
+        transition: 1s ease-in-out;
+    }
+}

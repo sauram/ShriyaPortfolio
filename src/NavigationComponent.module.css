@@ -1,11 +1,5 @@
 /* default style*/
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 ul {
     list-style: none;
 }
@@ -15,33 +9,60 @@ a {
     font-size: 18px;
 }
 
-.navBar {
-    background-color: aliceblue;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-    min-height: 70px;
-}
-
 .navMenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 20px;
 }
 
-@media screen and (max-width: 780px) {
-    /* hamburger*/
-    .hamburger {
+.navbar {
+    margin: 20px 40px;
+}
+
+.heading {
+    font-size: 32px;
+    width: 200px;
+}
+
+.socialMediaHandle {
+    width: auto;
+}
+
+.navMenuWrapper {
+    width: auto;
+}
+.hamburger {
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .heading {
+        font-size: 28px;
+    }
+    .navbar {
+        margin: 10px 20px
+    }
+
+    .navMenu {
+        display: flex;
+        flex-direction: column;
+    }
+    .socialMediaHandle {
+        display: none;
+    }
+
+    .navMenuWrapper {
+        display: none;
+    }
+
+    .hamburger{
         display: block;
         cursor: pointer;
     }
 
     .bar {
         background-color: #120f0b;
-        width: 20px;
+        width: 44px;
         height: 3px;
         display: block;
         margin: 5px;
@@ -49,15 +70,23 @@ a {
         transition: 0.3s ease-in-out;
     }
 
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
     .hamburger.active .bar:nth-child(1){
-        transform: translateX(8px) rotate(45deg);
+        transform: translateY(4px) translateX(1px) rotate(45deg);
     }
-    .hamburger.active .bar:nth-child(0) {
-        transform: translateY(-8px) rotate(-45deg);
+    .hamburger.active .bar:nth-child(2) {
+        transform: translateY(-4px) rotate(-45deg);
     }
+}
+/* @media screen and (max-width: 780px) {
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    
+
+    
 
     .navMenu {
         position: absolute;
@@ -70,12 +99,4 @@ a {
         background-color: aliceblue;
         padding: 10px;
     }
-
-    .navBar.active {
-        left: 0;
-    }
-
-    .navBar.li {
-        margin: 16px 0;
-    }
-}
+} */
