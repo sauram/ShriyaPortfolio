@@ -36,8 +36,16 @@ a {
     display: none;
 }
 @media screen and (max-width: 768px) {
+    a {
+        font-size: 32px;
+        color: #120f0b;
+        cursor: pointer;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
     .heading {
-        font-size: 28px;
+        font-size: 32px;
     }
     .navbar {
         margin: 10px 20px
@@ -46,6 +54,7 @@ a {
     .navMenu {
         display: flex;
         flex-direction: column;
+        gap: 10px;
     }
     .socialMediaHandle {
         display: none;

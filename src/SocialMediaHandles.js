@@ -20,8 +20,8 @@ const socialMediaHandles = [
     }
 ]
 
-const SocialMediaHandles = () => (
-    <div className={`${SocialMediaHandlesCss.handles}`}>
+const SocialMediaHandles = ({isActive}) => (
+    <div className={`${SocialMediaHandlesCss.handles} ${isActive ? SocialMediaHandlesCss.active : ''}`}>
         <Flex direction="row" gap="size-300" margin="size-300">
             {
                 socialMediaHandles.map(socialMediaHandle => (

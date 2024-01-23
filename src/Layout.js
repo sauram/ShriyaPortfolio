@@ -26,8 +26,8 @@ const Layout = () => {
         >
             <HeaderComponent isActive={ isActive } toggleState={ toggleState } gridArea='header'/>
             <ContentComponent isActive={ isActive } toggleState={ toggleState } gridArea='content'/>
-            {!isActive && <FooterComponent gridArea='footer'/> }
-            { isActive && <SocialMediaHandles />}
+            <FooterComponent isActive={ isActive } gridArea='footer'/>
+            <SocialMediaHandles isActive={ isActive }/>
         </Grid>
     )
 };

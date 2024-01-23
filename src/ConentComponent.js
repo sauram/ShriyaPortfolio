@@ -1,13 +1,20 @@
 import NavigationComponent from "./NavigationComponent";
+import ContentComponentCss from './ContentComponent.module.css';
+import { Flex } from "@react-spectrum/layout";
+import PortFolioImage from "./PortFolioImage";
+import PortFolioIntro from "./PortFolioIntro";
 const ContentComponent = ({ isActive, toggleState }) => {
     return (
         <>
         {!isActive && (
             <div>
-                Content
+                <PortFolioImage />
+                <PortFolioIntro />
             </div>
         )}
-        {isActive && <NavigationComponent isActive={isActive} toggleState={ toggleState }/>}
+        <div className={`${ContentComponentCss.content} ${isActive ? ContentComponentCss.active : ''}`}>
+            <NavigationComponent isActive={isActive} toggleState={ toggleState }/>
+        </div>
         </>
     )
 };

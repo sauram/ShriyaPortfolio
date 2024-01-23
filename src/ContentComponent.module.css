@@ -1,18 +1,18 @@
 
-.handles {
+.content {
     width: auto;
 }
 
 @media screen and (max-width: 768px) {
-    .handles {
+    .content {
         display: flex;
         position: absolute;
         transition: 0.3s ease-in-out;
-        bottom: -10%;
-        right: 12dvh;
+        bottom: -50%;
+        right: 13dvh;
     }
 
-    .handles.active {
-        bottom: 0;
+    .content.active {
+        bottom: 35%;
     }
 }

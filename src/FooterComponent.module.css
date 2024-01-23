@@ -3,3 +3,17 @@
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        position: absolute;
+        right: 14dvh;
+        bottom: 5%;
+        transition: 10ms ease;
+    }
+
+    .footer.active {
+        bottom: -10%
+    }
+}
