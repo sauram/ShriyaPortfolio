@@ -1,18 +1,23 @@
 
 .handles {
-    width: auto;
+    background-color: cornsilk;
+    width: 100%;
+    display: none;
+    height: 46vw;
 }
 
 @media screen and (max-width: 768px) {
     .handles {
-        display: flex;
-        position: absolute;
+        display: none;
+        /* position: absolute;
         transition: 0.3s ease-in-out;
         bottom: -10%;
-        right: 12dvh;
+        right: 12dvh; */
     }
 
     .handles.active {
         bottom: 0;
+        display: flex;
+        justify-content: center;
     }
 }

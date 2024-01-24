@@ -1,7 +1,6 @@
 import { Icon } from '@react-spectrum/icon';
 import { Link } from '@react-spectrum/link';
 import { Flex } from '@react-spectrum/layout';
-import SocialMediaHandlesCss from './SocialMediaHandles.module.css'
 const socialMediaHandles = [
     {
         handleName: "Instagram",
@@ -21,7 +20,6 @@ const socialMediaHandles = [
 ]
 
 const SocialMediaHandles = ({isActive}) => (
-    <div className={`${SocialMediaHandlesCss.handles} ${isActive ? SocialMediaHandlesCss.active : ''}`}>
         <Flex direction="row" gap="size-300" margin="size-300">
             {
                 socialMediaHandles.map(socialMediaHandle => (
@@ -37,7 +35,6 @@ const SocialMediaHandles = ({isActive}) => (
                 ))
             }
         </Flex>
-    </div>
 );
 
 export default SocialMediaHandles;

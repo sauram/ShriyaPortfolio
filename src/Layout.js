@@ -5,6 +5,7 @@ import ContentComponent from "./ConentComponent";
 import FooterComponent from "./FooterComponent";
 import { useState } from "react";
 import SocialMediaHandles from "./SocialMediaHandles";
+import SocialMediaHandlesCss from "./SocialMediaHandles.module.css";
 
 const Layout = () => {
     const [isActive, setActive] = useState(false);
@@ -19,15 +20,18 @@ const Layout = () => {
                 'footer'
             ]}
             rows={['size-2000', 'auto', 'size-1000']}
-            height="100vh"
             UNSAFE_style={ {
                 fontFamily: '"Raleway", "Source Sans Pro"',
+                backgroundColor:'cornsilk'
             }}
         >
             <HeaderComponent isActive={ isActive } toggleState={ toggleState } gridArea='header'/>
             <ContentComponent isActive={ isActive } toggleState={ toggleState } gridArea='content'/>
             <FooterComponent isActive={ isActive } gridArea='footer'/>
-            <SocialMediaHandles isActive={ isActive }/>
+            <div className={`${SocialMediaHandlesCss.handles} ${isActive ? SocialMediaHandlesCss.active : ''}`}>
+                <SocialMediaHandles isActive={ isActive }/>
+            </div>
+            
         </Grid>
     )
 };

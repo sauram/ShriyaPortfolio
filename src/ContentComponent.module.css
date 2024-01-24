@@ -1,18 +1,33 @@
 
 .content {
-    width: auto;
+    width: 100%;
+    display: none;
+    background-color: cornsilk;
+}
+
+.container {
+    padding: 2dvh 30dvh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 768px) {
     .content {
-        display: flex;
-        position: absolute;
-        transition: 0.3s ease-in-out;
-        bottom: -50%;
-        right: 13dvh;
+        display: none;
+        /* left: dvh; */
     }
 
     .content.active {
-        bottom: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 10em; */
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 0;
     }
 }

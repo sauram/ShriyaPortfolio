@@ -7,7 +7,12 @@ ul {
 a {
     text-decoration: none;
     font-size: 18px;
+    color: #120f0b;
 }
+
+/* a:hover {
+    text-decoration: underline;
+} */
 
 .navMenu {
     display: flex;
@@ -55,6 +60,8 @@ a {
         display: flex;
         flex-direction: column;
         gap: 10px;
+        margin: 26dvw 14vw;
+        padding: 0px;
     }
     .socialMediaHandle {
         display: none;
