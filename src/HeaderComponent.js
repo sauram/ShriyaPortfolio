@@ -4,6 +4,7 @@ import { PortFolioName } from './Constant';
 import NavigationComponent from './NavigationComponent';
 import SocialMediaHandles from './SocialMediaHandles';
 import NavigationComponentCSS from './NavigationComponent.module.css'
+import { Link } from 'react-router-dom';
 const HeaderComponent = ({ isActive, toggleState }) => {
     return (
         <nav className={ NavigationComponentCSS.navbar }>
@@ -15,10 +16,10 @@ const HeaderComponent = ({ isActive, toggleState }) => {
             >
                 
                 <Heading level={1} UNSAFE_className={ NavigationComponentCSS.heading }>
-                    { PortFolioName }
+                    <Link to="/">{ PortFolioName } </Link>
                 </Heading>
                 <div className={ `${NavigationComponentCSS.navMenuWrapper}` }>
-                    <NavigationComponent isActive={ isActive } setActive= { toggleState } />
+                    <NavigationComponent isActive={ isActive } toggleState= { toggleState } />
                 </div>
                 <div className={ `${NavigationComponentCSS.socialMediaHandle}`}>
                     <SocialMediaHandles />

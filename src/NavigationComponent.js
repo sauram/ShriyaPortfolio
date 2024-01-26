@@ -1,30 +1,28 @@
+import { Link } from 'react-router-dom';
 import NavigationComponentCss from './NavigationComponent.module.css';
 
 const NavigationComponent = ({isActive, toggleState}) => {
     return (
         // <nav className={`${NavigationComponentCss.navbar}`}>
-
+        <nav>
           <ul className={`${NavigationComponentCss.navMenu}`}>
             <li onClick={() => toggleState(isActive)}>
-              <a href='#home' className={`${NavigationComponentCss.navLink}`}>About</a>
+              <Link to='/about' className={`${NavigationComponentCss.navLink}`}>About</Link>
             </li>
             <li onClick={() => toggleState(isActive)}>
-              <a href='#home' className={`${NavigationComponentCss.navLink}`}>Research</a>
+              <Link to='/research' className={`${NavigationComponentCss.navLink}`}>Research</Link>
             </li>
             <li onClick={() => toggleState(isActive)}>
-              <a href='#home' className={`${NavigationComponentCss.navLink}`}>CV</a>
+              <Link to='/cv' className={`${NavigationComponentCss.navLink}`}>CV</Link>
             </li>
             <li onClick={() => toggleState(isActive)}>
-              <a href='#home' className={`${NavigationComponentCss.navLink}`}>Publications</a>
+              <Link to='/publications' className={`${NavigationComponentCss.navLink}`}>Publications</Link>
             </li>
             <li onClick={() => toggleState(isActive)}>
-              <a href='#home' className={`${NavigationComponentCss.navLink}`}>Contact</a>
+              <Link to='/contact' className={`${NavigationComponentCss.navLink}`}>Contact</Link>
             </li>
           </ul>
-
-
-        
-        // </nav>
+        </nav>
     )
 };
 

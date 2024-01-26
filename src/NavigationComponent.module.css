@@ -30,6 +30,10 @@ a {
     width: 200px;
 }
 
+.heading a{
+    font-size: inherit
+}
+
 .socialMediaHandle {
     width: auto;
 }

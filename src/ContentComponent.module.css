@@ -30,4 +30,8 @@
         flex-direction: column;
         padding: 0;
     }
+
+    .container.active{
+        display:none
+    }
 }
