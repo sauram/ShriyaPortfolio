@@ -37,4 +37,18 @@ const SocialMediaHandles = ({isActive}) => (
         </Flex>
 );
 
+const SocialMediaHandleText = () => (
+    <Flex direction="column" gap="size-100">
+        {
+            socialMediaHandles.map(socialMediaHandle => (
+                <Link href={socialMediaHandle.redirectURL} target='_blank' variant='secondary' UNSAFE_style={{fontSize:"0.9rem"}}>
+                    { socialMediaHandle.handleName }
+                </Link>
+            ))
+        }
+    </Flex>
+)
+
 export default SocialMediaHandles;
+
+export { SocialMediaHandleText };

@@ -9,7 +9,6 @@ const v3Theme= {
   ...defaultTheme,
   dark: darkTheme.light
 }
-
 function App() {
   return (
     // TODO: Remove colorScheme prop after development

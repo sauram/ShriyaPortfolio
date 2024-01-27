@@ -19,6 +19,7 @@ const Layout = () => {
                 'content',
                 'footer'
             ]}
+            minHeight="100dvh"
             rows={['size-2000', 'auto', 'size-1000']}
             UNSAFE_style={ {
                 fontFamily: '"Raleway", "Source Sans Pro"',
