@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-spectrum/divider": "^3.5.11",
     "@react-spectrum/icon": "^3.7.9",
     "@react-spectrum/layout": "^3.6.1",
     "@react-spectrum/link": "^3.6.3",

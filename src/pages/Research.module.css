@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin:0 25vw;
+}
+
+.secondaryHeading {
+    font-size: x-large;
+}
+
+.primaryHeading {
+    font-size: xx-large;
+}
+
+.text {
+    font-size: 1rem;
+}
+
+.funding {
+    font-weight: 800;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 5vw;
+    }
+
+    .secondaryHeading {
+        font-size: large;
+    }
+
+    .primaryHeading {
+        font-size: x-large;
+    }
+
+    .container.active {
+        display: none;
+    }
+}

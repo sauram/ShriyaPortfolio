@@ -1,0 +1,49 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin:0 25vw;
+    text-align: center;
+}
+
+.secondaryHeading {
+    font-size: x-large;
+}
+
+.primaryHeading {
+    font-size: xx-large;
+}
+
+.text {
+    font-size: 0.85rem;
+    text-align: start;
+    padding-bottom: 1dvh;
+}
+
+.text span {
+    font-weight: 800;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 5vw;
+    }
+
+    .secondaryHeading {
+        font-size: large;
+    }
+
+    .primaryHeading {
+        font-size: x-large;
+    }
+
+    .text {
+        font-size: 0.9rem;
+    }
+
+    .container.active {
+        display: none;
+    }
+}
