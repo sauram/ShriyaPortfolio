@@ -32,6 +32,11 @@
     font-weight: bold;
 }
 
+.container li {
+    margin-left: 3dvw;
+    list-style:disc ;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         margin: 0 5vw;

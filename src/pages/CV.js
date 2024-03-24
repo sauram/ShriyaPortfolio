@@ -1,7 +1,10 @@
 import { Heading, Text } from '@react-spectrum/text';
 import CVCss from './CV.module.css'
+import { Link } from '@react-spectrum/link';
 const CV = ({isActive}) => (
     <div className={`${CVCss.container} ${isActive ? CVCss.active : ''}`}>
+
+        <Link UNSAFE_style={ {color:'black', fontSize:'small', textAlign:"center", marginBottom:"2dvh"}} download="ShriyaCV" href="./../assets/documents/CV.pdf"> Click here to download my full CV </Link>
         {/* Education Section */}
         <Heading UNSAFE_className={ CVCss.primaryHeading }>
             EDUCATION
@@ -99,17 +102,17 @@ const CV = ({isActive}) => (
         <ul>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                1. American Society for Microbiology (ASM) Future Leaders Mentorship Fellow
+                American Society for Microbiology (ASM) Future Leaders Mentorship Fellow
                 </Text>
             </li>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                2. Space Generation Advisory Council (SGAC) Mentorship Fellow
+                Space Generation Advisory Council (SGAC) Mentorship Fellow
                 </Text>
             </li>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                3. Won ASA Student Representative Scholarship for Mars Analogue Site Expedition
+                Won ASA Student Representative Scholarship for Mars Analogue Site Expedition
                 (MASE’2022) and participated in the MASE program in Rajasthan Explored Mars
                 Analogue sites in Rajasthan with mentors from the Dept of Astrobiology Spaceonova,
                 understanding extremophiles and the possibility of life on Mars, hunting for
@@ -118,23 +121,23 @@ const CV = ({isActive}) => (
             </li>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                4. Completed Science Communication Online Programme (SCOPE) run by the
+                Completed Science Communication Online Programme (SCOPE) run by the
                 Northwestern University, USA
                 </Text>
             </li>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                5. Content Writer at Astrobiology Society of America (ASA)
+                Content Writer at Astrobiology Society of America (ASA)
                 </Text>
             </li>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                6. Intern at IIT Bombay (Proteomics Internship Program 2021)
+                Intern at IIT Bombay (Proteomics Internship Program 2021)
                 </Text>
             </li>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                7. Intern at United Nations
+                Intern at United Nations
                 </Text>
             </li>
         </ul>
@@ -148,8 +151,8 @@ const CV = ({isActive}) => (
         <ul>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                1. Won the best poster award for the poster titled: Understanding and characterization
-of MAB Beta-lactamase from Mycobacterium abscessus: Focusing on Variant
+                Won the best poster award for the poster titled: <span className={ CVCss.textTitle}>Understanding and characterization
+of MAB Beta-lactamase from Mycobacterium abscessus</span>: Focusing on Variant
 Analysis, Molecular Docking Analysis and MD Simulation at the “Rosetrees
 Interdisciplinary workshop: Quantitative approaches to antimicrobial resistance and
 microbiology” organized by the University of Durham and University of Sheffield (25th
@@ -158,43 +161,103 @@ microbiology” organized by the University of Durham and University of Sheffiel
             </li>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                2. Presented poster on MAB beta-lactamase at the Antimicrobial Resistance-Genomes,
-Big Data and Emerging Technologies 2022-Virtual Conference organized by
+                Presented poster on <span className={CVCss.textTitle}>MAB beta-lactamase at the Antimicrobial Resistance-Genomes,
+Big Data and Emerging Technologies 2022</span> -Virtual Conference organized by
 Wellcome Connecting Science (27-29 April 2022)
                 </Text>
             </li>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                3. Won ASA Student Representative Scholarship for Mars Analogue Site Expedition
-                (MASE’2022) and participated in the MASE program in Rajasthan Explored Mars
-                Analogue sites in Rajasthan with mentors from the Dept of Astrobiology Spaceonova,
-                understanding extremophiles and the possibility of life on Mars, hunting for
-                biosignatures, analyzing stromatolites and tardigrades
+                Attended The International Conference on Nanomaterials for Electro -catalysis
+                Technology (I-CONECT 2023) (20th -22nd March 2023)
                 </Text>
             </li>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                4. Completed Science Communication Online Programme (SCOPE) run by the
-                Northwestern University, USA
+                Attended and volunteered at the 48th National Seminar on Crystallography (NSC)
+                conference (25-27th November 2021)
                 </Text>
             </li>
             <li>
                 <Text UNSAFE_className={ CVCss.text }>
-                5. Content Writer at Astrobiology Society of America (ASA)
-                </Text>
-            </li>
-            <li>
-                <Text UNSAFE_className={ CVCss.text }>
-                6. Intern at IIT Bombay (Proteomics Internship Program 2021)
-                </Text>
-            </li>
-            <li>
-                <Text UNSAFE_className={ CVCss.text }>
-                7. Intern at United Nations
+                Attended the International Conference on Data Science in Biology (ICDSB) (4,5 and
+8th September 2020)
                 </Text>
             </li>
         </ul>
+        <br />
 
+        {/* Academic Achievements */}
+
+        <Heading UNSAFE_className={ CVCss.primaryHeading }>
+        Academic Achievements
+        </Heading>
+        {/* List down all the skills */}
+        <ul>
+            <li>
+                <Text UNSAFE_className={ CVCss.text }>
+                GATE 2022 Qualified (Rank-233)
+                </Text>
+            </li>
+            <li>
+                <Text UNSAFE_className={ CVCss.text }>
+                IIT JAM 2020 Rank-23
+                </Text>
+            </li>
+            <li>
+                <Text UNSAFE_className={ CVCss.text }>
+                Qualified TIFR/JGEEBILS EXAM 2020
+                </Text>
+            </li>
+            <li>
+                <Text UNSAFE_className={ CVCss.text }>
+                Science Topper Queen Mary's School (class12), English and Physical Education
+Topper
+                </Text>
+            </li>
+        </ul>
+        <br />
+
+        {/* Position of Responsibility */}
+
+        <Heading UNSAFE_className={ CVCss.primaryHeading }>
+        Position of Responsibility
+        </Heading>
+        {/* List down all the skills */}
+        <ul>
+            <li>
+                <Text UNSAFE_className={ CVCss.text }>
+                Mars on Earth Project (MoEP) Indian Chapter Coordinator
+                </Text>
+            </li>
+            <li>
+                <Text UNSAFE_className={ CVCss.text }>
+                Department Placement Representative (DPR) for MSc. Biotech batch at IIT
+Roorkee
+                </Text>
+            </li>
+            <li>
+                <Text UNSAFE_className={ CVCss.text }>
+                Mentorship Head, Child Rights and You (NGO) IIT Roorkee Chapter
+                </Text>
+            </li>
+            <li>
+                <Text UNSAFE_className={ CVCss.text }>
+                Community Building Vertical Head, Biotech Students Society (BSS), IIT Roorkee
+                </Text>
+            </li>
+            <li>
+                <Text UNSAFE_className={ CVCss.text }>
+                Life Sciences Department President, Hansraj College, University of Delhi
+                </Text>
+            </li>
+            <li>
+                <Text UNSAFE_className={ CVCss.text }>
+                Class Representative BSc Life Sciences (2017-2020)
+                </Text>
+            </li>
+        </ul>
+        <br />
     </div>
 );
 
