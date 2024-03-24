@@ -4,7 +4,7 @@ import { Link } from '@react-spectrum/link';
 const CV = ({isActive}) => (
     <div className={`${CVCss.container} ${isActive ? CVCss.active : ''}`}>
 
-        <Link UNSAFE_style={ {color:'black', fontSize:'small', textAlign:"center", marginBottom:"2dvh"}} download="ShriyaCV" href="./../assets/documents/CV.pdf"> Click here to download my full CV </Link>
+        <Link UNSAFE_style={ {color:'black', fontSize:'small', textAlign:"center", marginBottom:"2dvh"}} target='_blank' href="https://drive.google.com/file/d/1O6UMGOh8zU3Th-OuXcS3fcFTz3llvDbp/view?usp=sharing"> Click here to download my full CV </Link>
         {/* Education Section */}
         <Heading UNSAFE_className={ CVCss.primaryHeading }>
             EDUCATION
