@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin:0 25vw;
+}
+
+.tertiaryHeading {
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.tertiaryHeadingItalic {
+    font-style: italic
+}
+
+.secondaryHeading {
+    font-size: small;
+    margin-bottom: 0;
+}
+
+.primaryHeading {
+    font-size: xx-large;
+    margin: 0;
+}
+
+.text {
+    font-size: x-small;
+}
+
+.textTitle {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin: 0 5vw;
+    }
+
+    .secondaryHeading {
+        font-size: large;
+    }
+
+    .primaryHeading {
+        font-size: x-large;
+    }
+
+    .container.active {
+        display: none;
+    }
+}

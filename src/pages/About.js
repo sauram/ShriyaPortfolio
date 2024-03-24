@@ -1,7 +1,9 @@
 import { Text } from '@react-spectrum/text';
+import AboutPageImage from './../assets/images/ShriyaIITRBuilding.JPG'
 import AboutCss from './About.module.css';
 const About = ({isActive}) => (
     <div className={`${AboutCss.container} ${isActive ? AboutCss.active : ''}`}>
+        <img className={`${AboutCss.containerImage}`} src={ AboutPageImage } alt='Shriya' />
         <Text>
             Welcome! I'm Shriya, a Delhi native with a passion for exploring the intersections of 
             biology and chemistry. My educational journey began at Queen Mary's School, shaping the 

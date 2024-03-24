@@ -7,6 +7,12 @@
     font-weight: 500;
 }
 
+.containerImage {
+    height: auto;
+    padding:0 0 5dvh 0;
+    width: 100%;
+}
+
 @media screen and (max-width: 768px) {
     .container {
         margin: 0 5vw;
@@ -15,4 +21,10 @@
     .container.active {
         display: none;
     }
+
+    /* .containerImage {
+        width: 100%;
+        padding: 10px 12px;
+        height: auto;
+    } */
 }

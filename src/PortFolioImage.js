@@ -1,7 +1,6 @@
-import portfolioImage from './assets/images/Emma.jpg'
 import PortfolioImageCss from './PortFolioImage.module.css';
 
-const PortFolioImage = () => (
+const PortFolioImage = ({ portfolioImage }) => (
     <img className={`${PortfolioImageCss.image}`} src={ portfolioImage } alt='Portfolio'/>
 );
 
